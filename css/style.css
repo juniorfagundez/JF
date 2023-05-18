@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: block;
+  padding: 1em;
+  background: rgb(0, 0, 0);
+  height: 20vh;
+  overflow: hidden;
+}
+header img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: auto;
+}
+
+main {
+  display: block;
+}
+
+footer {
+  display: block;
+  padding: 1em;
+  background: rgb(0, 0, 0);
+  height: 20vh;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Franklin Gothic Medium";
+  text-shadow: 2px 4px 4px rgba(32, 32, 32, 0.6);
+}
+h1 h2 {
+  width: 50%;
+  height: auto;
+}
+
+.main {
+  min-height: 60vh;
+  text-align: center;
+  overflow: hidden;
+  float: none;
+  width: 98%;
+  padding: 1%;
+}
+.main > article {
+  flex: 1;
+  background: rgb(255, 255, 255);
+}
+
+article {
+  padding: 1em;
+}
+
+li {
+  text-shadow: 2px 4px 4px rgba(155, 153, 153, 0.6);
+  float: left;
+}
+li a {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium";
+  padding-left: 50px;
+}
+li a:hover {
+  background: rgb(189, 186, 186);
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: rgb(245, 245, 245);
+  opacity: 90%;
+  text-align: center;
+  margin-top: 5px;
+  padding-left: 25%;
+}
+
+.footer-icons {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: rgb(245, 245, 245);
+  opacity: 75%;
+  text-align: center;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  font-family: monospace;
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Franklin Gothic Medium";
+  text-shadow: 2px 4px 4px rgba(32, 32, 32, 0.6);
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    width: 100%;
+    height: auto;
+    background-size: 100% auto;
+  }
+  .menu {
+    display: inline;
+    overflow: hidden;
+  }
+  article main {
+    width: 100%;
+    height: auto;
+    background-size: 100% auto;
+  }
+  img {
+    width: 100%;
+  }
+}
+@media (min-width: 600px) {
+  ul li a {
+    display: flex;
+    justify-content: flex-start;
+  }
+  footer .footer-icons {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (min-height: 70px) {
+  ul li a {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media (min-height: 500px) {
+  footer .footer-icons {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .img-footer {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
