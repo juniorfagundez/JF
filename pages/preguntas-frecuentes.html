@@ -6,26 +6,60 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0", viewport-fit=cover>
         <title>Preguntas</title>
-        <link rel="shortcut icon" href="../images/jf-logo-with-triangle-shape-and-circle-rounded-design-template-700-223601414.jpg">     
+        <link rel="shortcut icon" href="../images/jf-logo-with-triangle-shape-and-circle-rounded-design-template-700-223601414.png">     
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
     </head>
     <body>  
       <div class="grid-container">
         <header>
-          <div class="menu">
-            <div class="img-logo"><a href="../index.html"><img class="logo" src="../images/jf-logo-with-triangle-shape-and-circle-rounded-design-template-700-223601414.jpg"></a></div>
-            <ul class="nav-bar">  
-              <li><a href="./proyectos.html">Proyectos</a></li>
-              <li><a href="./sobre-mi.html" >Sobre mi</a></li>
-              <li><a href="./preguntas-frecuentes.html">Preguntas frecuentes</a></li>
-              <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-          </div>
-      </header>
+          <nav class="navbar navbar-expand-lg"> 
+          <!-- NAV CONTAINER START -->
+            <div class="img-logo"><a href="../index.html"><img class="logo" alt="Mi logo" src="../images/jf-logo-with-triangle-shape-and-circle-rounded-design-template-700-223601414.png"></a></div>
+          <!-- NAV BUTTON  -->
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#menuLateral">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          <!-- OFFCANVAS MAIN CONTAINER START -->
+            <section
+            class="offcanvas offcanvas-start"
+            id="menuLateral"
+            tabindex="-1">
+          <!-- OFF CANVAS MENU LINKS  START-->
+            <div class="offcanvas-body d-flex flex-column justify-content-between px-0">
+              <ul class="navbar-nav fs-5 justify-content-evenly">
+                <li class="nav-item p-3 py-md-1">
+                  <a href="../pages/preguntas-frecuentes.html" class="nav-link">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item p-3 py-md-1">
+                  <a href="../pages/proyectos.html" class="nav-link">Proyectos</a>
+                </li>
+                <li class="nav-item p-3 py-md-1">
+                  <a href="../pages/sobre-mi.html" class="nav-link">Sobre mi</a>
+                </li>
+                <li class="nav-item p-3 py-md-1">
+                  <a href="../pages/contacto.html" class="nav-link">Contacto</a>
+                </li>
+              </ul> 
+            </section>
+          <!-- OFFCANVAS MAIN CONTAINER END  -->
+          <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous">
+          </script>
+          </nav>
+        </header>
       <main>
         <article class="main">
-            <h1>FAQ</h1>
-            <h2>Muy pronto estare agregando mas contenido</h2>
-            <img src="../images/proximamente.gif" alt="Muy pronto mas contenido" class="img">
+          <h2>Que editor use para esta pagina? ⌨️</h2>
+          <ul><li></b>Visual Studio Code, si te preguntas porque te invito a visitar este <a href="https://www.irinadelgado.com/5-ventajas-de-usar-visual-studio-code-como-tu-editor-de-texto/">link</a></li></ul>
+          <h2>Cuales son mis planes a futuro? 🖥️</h2><ul><li>Me gustaria seguir desarrollandome como Full Stack Developer, adentrandome en el diseño web como foco principal. Poder trabajar como autonomo cuando complete mi ciclo junto a una empresa que quiera crecer conmigo en el ambito profesional y eventualmente cumplir con mi gran sueño de tener mi propia empresa de desarrollo web en Uruguay</li></ul>
+          <h2>Cuales son algunos de mis hobbies? 🎤📸</h2><ul><li>Si bien puedes encontrar mas de mi en mi seccion <a href="./sobre-mi.html">SOBRE MI</a>Tambien queria hablar de mi interes por el diseño, la fotografia y ademas la musica. En esta pagina podras encontrar ocultos algunos de mis temas favoritos del momento!</li></ul>
+          <h2>Que use para esta pagina? 💻</h2><p>Esta pagina fue creada con HTML, CSS y Bootstrap</p>
         </article>
       </main>
       <footer>

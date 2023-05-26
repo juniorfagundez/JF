@@ -7,11 +7,15 @@ $background-color_1: rgb(245, 245, 245);
 * {
 	box-sizing: border-box;
 }
+
+html {height: 100%;
+  	position: relative;
+}
+
 header {
-	display: block;
+	display: grid;
 	padding: 1em;
-	background: rgb(0, 0, 0);
-	height: 20vh;
+	background: rgb(245, 245, 245);
 	overflow: hidden;
 	img {
 		margin-left: 50%;
@@ -21,17 +25,22 @@ header {
 	}
 }
 main {
-	display: block;
+	display: grid;
 }
 footer {
-	display: block;
+	display: grid;
 	padding: 1em;
-	background: rgb(0, 0, 0);
+	background: rgb(255, 255, 255);
 	height: 20vh;
 	width: 100%;
+	position: absolute;
 }
-body {
+body, .grid-container {
+	grid-template-areas: "header"
+						"main"
+						"footer";
 	margin: 0;
+	min-height: 100%;
 }
 h1 {
 	h2 {
@@ -48,9 +57,9 @@ h1 {
 	float: none;
 	width: 98%;
 	padding: 1%;
-	>article {
+	article {
 		flex: 1;
-		background: rgb(255, 255, 255);
+		background: rgb(245, 245, 245);
 	}
 }
 article {
@@ -84,8 +93,8 @@ ul {
 .footer-icons {
 	list-style-type: none;
 	overflow: hidden;
-	background-color: $background-color_1;
-	opacity: 75%;
+	background-color: rgb(255, 255, 255);
+	opacity: 90%;
 	text-align: center;
 	margin-top: 5px;
 	padding: 10px;
@@ -94,7 +103,7 @@ h3 {
 	color: $color_2;
 	text-align: center;
 	font-family: $font-family_2;
-	display: block;
+	display: inline;
 	font-size: 1.17em;
 	margin-block-start: 1em;
 	margin-block-end: 1em;
@@ -166,3 +175,31 @@ h2 {
 		width: 100%;
 	}
 }
+nav,.offcanvas {
+  background-color: 245, 245, 245;
+}
+.navbar-toggler {
+  border: none;
+  background-color: 245, 245, 245;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav > li:hover {
+    background-color: #ffffff;
+  }
+}
+
+.navbar-toggler {
+	list-style-type: none;
+	overflow: hidden;
+	background-color: rgb(255, 255, 255);;
+	text-align: center;
+	margin-top: 5px;
+	padding-left: 25%;
+}
+
+.nav-link {background-color: 245, 245, 245;}
